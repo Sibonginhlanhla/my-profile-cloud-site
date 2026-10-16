@@ -68,7 +68,7 @@ app.http('chat', {
       return { jsonBody: { reply: reply || 'No answer came back. Try rephrasing your question.' } };
     } catch (e) {
       console.error(e);
-      return { status: 500, jsonBody: { reply: 'Something went wrong. Please try again.' } };
+      return { status: 500, jsonBody: { reply: 'DEBUG: ' + e.message } };
     }
   },
 });
