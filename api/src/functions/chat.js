@@ -61,8 +61,9 @@ app.http('chat', {
         body: JSON.stringify({ agent: { type: 'agent_reference', name: process.env.AGENT_NAME }, input }),
       });
       if (!res.ok) {
-        console.error('Agent error', res.status, await res.text());
-        return { status: 502, jsonBody: { reply: 'TechPulse is unavailable right now. Please try again shortly.' } };
+        const errText = await res.text();
+        console.error('Agent error', res.status, errText);
+        return { status: 502, jsonBody: { reply: 'DEBUG ' + res.status + ': ' + errText.slice(0, 300) } };
       }
       const reply = extractText(await res.json());
       return { jsonBody: { reply: reply || 'No answer came back. Try rephrasing your question.' } };
