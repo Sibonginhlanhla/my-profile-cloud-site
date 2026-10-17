@@ -1,6 +1,6 @@
 # TechPulse: an AI tech-news assistant on Azure
 
-**Live site:** https://icy-ocean-02acab203.3.azurestaticapps.net/ &nbsp;|&nbsp; **Built by:** YOUR NAME ([LinkedIn](www.linkedin.com/in/sibonginhlanhla-magwaza-ab662b282))
+**Live site:** https://icy-ocean-02acab203.3.azurestaticapps.net/ &nbsp;|&nbsp; **Built by:** Sibonginhlanhla ([LinkedIn](www.linkedin.com/in/sibonginhlanhla-magwaza-ab662b282))
 
 TechPulse is a single-page web app where visitors get a live tech briefing (AI, cloud, Power Platform, security) with dated items and source links. The answers come from an AI agent in Microsoft Foundry that searches the web before it responds.
 
